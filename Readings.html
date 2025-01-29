@@ -1,0 +1,211 @@
+<html>
+<head>
+<title>Readings for Intelligent Agents course Summer 2024</title>
+</head>
+
+<body style="background-color: ffffbb; margin-left: 50px; margin-right: 50px;">
+<h1>Readings for Intelligent Agents course Summer 2024</h1>
+
+<p id="unit01readings"><b>Unit 1 Readings</b></p>
+<p><a href="References.html#wooldridge">Wooldridge (2009)</a> Chapter 2: "Intelligent Agents" defines an agent as "a computer system that is <i>situated</i>
+in some <i>environment</i>, and that is capable of <i>autonomous action</i> in this environment in order to meet its delegated objectives."
+An ethical angle emerges on page 23 in a discussion of the factors which would trigger human intervention, one of which is:
+"when the decision might cause harm." This reminded me of Asimov's Three Laws of Robotics, the first of which states:
+"A robot may not injure a human being, or, through inaction, allow a human being to come to harm" (<a href="References.html#asimov">Asimov, 1942</a>).
+Wooldridge goes on to describe types of environments and agents and their capabilities, comparing agents with objects and expert systems.
+Inputs, outputs and state are described, along with utility and the use of predicate functions.  It is a good, wide-ranging introduction.</p>
+
+<p id="unit02readings"><b>Unit 2 Readings</b></p>
+<p>The prescribed reading for this unit was <a href=#russell">Russell &amp; Norvig (2022)</a> Chapter 8: "First-Order Logic" 
+but I found it useful to read Chapter 2: "Intelligent Agents" before this, as it had sections on rationality and
+the structures of different types of agent, introducing representation and the relationships between entities.
+I think I will be coming back to Chapter 8 quite often (and the sources mentioned above) to refresh my understanding of FOL in agents.</p>
+
+<p id="unit03readings"><b>Unit 3 Readings</b></p>
+<p><a href="References.html#maes">Maes (1991)</a> described systems of agents with different but interchangeable roles, 
+with the ability to adjust their own importance to particular tasks.</p>
+<p><a href="References.html#kaelbling">Kaelbling (1991)</a> is about "the information content of the internal states of a machine."
+One sentence that caught my eye on the first page was:
+"the world may change during the computation, 
+invalidating the initial semantic interpretation of the inputs, 
+and possibly, therefore, the interpretation of the outputs."  So these agents need to be quick.  
+Emphasis is put on the modular architecture and the incremental nature of software development.
+It is made clear that this system is suitable for dynamic environments.
+A distinction is made between dynamic data, which needs to be kept in individual machines,
+and static data, which only needs to be in one instance, thereby reducing computing requirements.
+Reference is made to <a href="References.html#brooks">Brooks (1991)</a>, which is also in this week's reading list.</p>
+<p><a href="References.html#bratman">Bratman (1988)</a> discusses a combination of the weighing of alternatives, as in <a href="References.html#maes">Maes (1991)</a>,
+and "means-end reasoning," while bearing in mind "resource boundedness," which apparently means that agents:
+"are unable to perform arbitrarily large computations in constant time."  
+This recognises the problem I saw in <a href="References.html#kaelbling">Kaelbling (1991)</a>, about getting out of synch with the state of environment,
+although a footnote on page 5 says that applying these systems to real-time situations was a relatively recent idea.
+The paper goes on to describe how a planning function could reduce the computing requirement by limiting the necessary reasoning.
+It sounds to me analogous to the shortcutting of an AND statement when the first argument evaluates to FALSE and the second argument is not evaluated.
+Also, knowledge is also bounded so that machines "are neither prescient nor omniscient."
+This bounding takes the form of filtering, e.g. by time frame, location or compatibility with existing plans.</p>
+<p><a href="References.html#brooks">Brooks (1991)</a> got me in a tangle over the year to include in the citation. This paper was received by <i>Artificial Intelligence</i>
+in 1987 but not printed for four years, hence the year 1991 is cited. Perhaps this means that many papers are actually older than they seem.
+This paper is about agents ("independent and parallel activity producers") that interface to the environment more than to each other.
+There is an interesting declaration on the first page: "No one talks about replicating the full gamut of human intelligence any more. 
+Instead we see a retreat into specialized subproblems." 
+That may have been true in 1987 but today all those elements are being brought together again (<a href="References.html#goertzel">Goertzel &amp; Pennachin, 2007</a>).
+Brooks advocates an incremental approach, starting with fairly simple systems. He is effectively saying we have to walk before we can run.
+By "no representation" Brooks is saying a system can make decisions by 
+"using the world as its own model and to continuously match the preconditions of each goal against the real world."
+I found this paper to be perhaps more optimistic than realistic, but that may be because I do not fully understand the mechanisms at work.</p>
+<p>Finally, <a href="References.html#reynolds">Reynolds (1987)</a> discusses computer animation of a flock of birds, where 
+"the aggregate motion of the simulated flock is the result of the dense interaction of the relatively simple behaviors of the individual simulated birds."
+It is a similar problem to those in the first four papers. For these "boids" (simulated birds), three behaviours are identified: "collision avoidance..., 
+velocity matching... and flock centering."  As with the other papers, computing is in LISP.</p>
+
+<p id="unit04reading"><b>Unit 4 Reading</b></p>
+<p>The prescribed passage was <a href="References.html#wooldridge">Wooldridge (2009)</a> Section 5.2, titled "Hybrid Agents," but I read the whole of Chapter 5.
+This included a section on reactive agents, and much material from the papers read in Unit 4 was summarised there. 
+Hybrid agents combine at least two layers such as proactive and reasoning or planning layers, which can work either in parallel 
+(where each is connected to sensor input and effector output) or series (where the inputs and outputs are connected to interface layers and the proactive 
+and reasoning layers pass control to each other).  Other layers can include modelling layers, cooperation layers etc.
+Four examples are given: TouringMachines, InterRRaP, 3T and Stanley, a self-driving Volkswagen.</p>
+
+
+<p id="unit05readings"><b>Unit 5 Readings</b></p>
+<p><a href="References.html#searle">Searle (1969)</a> begins by asking simple questions about words and meaning, building up to the philosophy of language,
+which he is keen to distance from "linguistic philosophy." 
+He soon starts defining obscure terms: "Synonymy is defined as: two words are synonymous if and only if they have the same meaning; 
+and analyticity is defined as: a statement is analytic if and only if it is true in virtue of its meaning or by definition."
+Then he states the need for "some objective test for analyticity and synonymy."
+Searle gives the impression of an eccentric with a lot of time on his hands, digging ever deeper into these concepts and the meaning of "meaning."
+He even cites <a href="References.html#wittgenstein">Wittgenstein (1953)</a> as pointing out that "exactness is relative to some purpose."
+Searle seems to think that the inclusion of many examples will clarify the linguistic problems he describes but I think they obscure them.
+By Chapter 2, Searle has formulated "that speaking a language is engaging in a rule-governed form of behavior..., performing acts according to rules"
+and here he defines "different kinds of speech acts..., propositions, rules, meaning, and facts."
+He explains that speech acts consist of utterance acts, propositional acts, illocutionary acts and perlocutionary acts.
+I avoided learning his symbolism to prevent confusion with the symbolism of first order logic.
+I was glad of the opportunity to learn new words such as <i>idiolect</i>, <i>illocution</i> and <i>perlocution</i>, 
+but I found this to be a very turgid book and am pleased to see it does not reappear in the reading lists for future units in this module.</p>
+<p><a href="References.html#payne">Payne (2014)</a> discusses solutions to the problem of different agents having different ontologies and even vocabularies.
+Possible solutions include giving agents access to a mapped list of equivalent terms 
+and letting agents exchange messages until they develop some knowledge of their ontological differences.
+The authors introduce their idea of "the Correspondence Inclusion Dialogue (CID), whereby agents negotiate by exchanging beliefs of the utilities 
+of each correspondence."  
+They are thus able to align their vocabularies by a process of accepting or rejecting matches, assigning to each pair a "degree of belief".
+The paper is presented succinctly and is to the point.</p>
+
+<p id="unit06reading"><b>Unit 6 Reading</b></p>
+<p><a href="References.html#finin_et_al">Finin et al (1994)</a> describes Knowledge Query and Manipulation Language (KQML). <a href="References.html#searle">Searle</a>'s 
+"speech acts" from Unit 5 reappear as "performatives." 
+Messages containing both these instructions and data, for example in JSON format, can be exchanged between agents.
+This is needed because of the emergence of a "large number of autonomous nodes" as the computing world was described in 1994, 
+but reading this made me think of the APIs I have been writing, which use HTTP requests and responses in a similar way to KQML.
+In fact I see no reason why HTTP cannot be a vehicle for KQML. On page 458 I see the authors got there before me.
+The language is described in later pages, including a useful list of performatives.
+This seems to have been a seminal paper on Agent Control Languages.</p>
+
+<p id="unit07readings"><b>Unit 7 Readings</b></p>
+<p><a href="References.html#mikolov">Mikolov (2013)</a> describes methods of collecting groups of words to build the vectors that were introduced in the lecturecast,
+in particular a novel one called "skip-gram," which has the computational advantage of not multiplying matrices.
+Shortcuts include the representation of whole phrases as vectors and the use of the softmax function 
+to convert these vectors into probability distributions, sped up using a binary tree structure.
+The authors describe their method of representing frequent words by a process of "negative sampling."
+The vector addition of phrases promises to be a powerful tool in the comprehension of language by computers.</p>
+<p><a href="References.html#hearst">Hearst (2000)</a> shows how simple phrases such as "such as" or "a kind of" can reveal relationships between entities so that hyponyms can be learned.
+The process is given a kick-start by starting with dictionaries.
+Further patterns are discovered by ingesting large quantiries of text.
+The resulting relations are fed into WordNet, a machine theaurus.</p>
+<p><a href="References.html#aqab">Aqab (2020)</a> promotes neural networks as the most efficient way of teaching machines to recognise handwriting,
+where the demand is driven by the need to process cheques etc., and the potential for systems that can type up students' notes.
+The method described in this paper consists of Python code learning from a set of characters found on Kaggle.  
+This is a similar project to the Object Recognition assignment in the Machine Learning module.
+</p>
+
+<p id="unit08reading"><b>Unit 8 Reading</b></p>
+<p><a href="References.html#zimmerman">Zimmerman (2019)</a> Is about the tree-like representation of parsed phrases and sentences. 
+The author shows how parsing can start with a list of words in the same order as the phrase or sentence, showing parts of speech and their functions, 
+e.g. nsubj (subject) or amod (adjective).
+Then this can be laid out in the same order but with connecting arrows showing these functions and the direction of modifications like adjectives.
+A third way is shown, in a hierarchical order with the verb at the root, like a German sentence (ending with a verb) rotated 90&deg; anticlockwise.
+The article describes how the spaCy NLP library for Python parses natural language into nodes, the tokens, and edges, "the syntactical relationships between the words."
+The paper has links to:</p>
+<ul>
+<li><a href="https://spacy.io/">spaCy</a> Industrial-Strength Natural Language Processing in Python</li>
+<li><a href="https://spacy.io/api/data-formats#pos-tagging">Data formats</a> Details on spaCy's input and output data formats</li>
+<li><a href="https://www.youtube.com/watch?v=e12danHhlic">Yoav Goldberg: The missing elements in NLP (spaCy IRL 2019)</a></li>
+</ul>
+
+<p id="unit09reading"><b>Unit 9 Reading</b></p>
+<p>Unfortunately, both of this week's YouTube videos are unavailable, one "being reprocessed" and the other "private."</p>
+<p>I searched for Andrew Ng on YouTube and found a course on Machine Learning (<a href="References.html#ng">Ng, 2022</a>), 
+which had apparently been on Coursera. Unfortunately, this did not go as far as deep learning.</p>
+<p>A more relevant YouTube course was by a Qatar University professor (<a href="References.html#elsayed">Elsayed, 2024</a>) and this introduced the concept well.</p>
+<p><a href="References.html#thomsen">Thomsen (Feb 19, 2015)</a> is very dubious about deep learning, or at least the perception of it as the path to self-aware computers.
+He seems to dismiss image recognition as a party trick. His background is that he writes about "tech, video games, science and culture."</p>
+
+<p id="unit10reading"><b>Unit 10 Reading</b></p>
+<p>The article on deep learning's effect on business (<a href="References.html#wef">WEF, 2022</a>) talks about the non-linearity of deep learning and how
+this mimics the human brain's mode of operation. Uses are discussed, including "virtual assistants, fraud detection, language translation, 
+chatbots and service bots, colourization of black-and-white images, facial recognition, disease diagnoses,... parsing speech,... autonomous vehicles."
+The author has some concerns about the safety of devices that rely on deep learning, and the difficulty of troubleshooting systems that were
+never actually programmed by anyone. The article ends by stating that 99% of data is not being used by deep learning systems.</p>
+
+<p id="unit11readings"><b>Unit 11 Readings</b></p>
+<p>The article on manufacturing systems (<a href="References.html#foit">Foit, 2022</a>) talks about factories which are smart enough to schedule 
+their own production according to what customers are ordering. 
+It introduces a term borrowed from science fiction, the <i>holon</i>, which is "an entity that is both a whole in itself and simultaneously 
+a part of a larger system" (<a href="References.html#koestler">Koestler, 1967</a>). There is a discussion of agents, and an interesting stipulation that 
+"the agent changes the surroundings, but also senses the effects of these changes." 
+Then the author writes about "hierarchies" and "federations" of agents.
+This is a very broad survey of the application of this technology to manufacturing (I would have liked to see some specifics).</p>
+<p>Another article by a team of Mechanical and Automotive Engineers from South China University of Technology (<a href="References.html#wang">Wang, 2016</a>)
+mentions innovative manufacturing systems aimed at greater efficiency, 
+e.g. "flexible manufacturing system (FMS)... the agile manufacturing system (AMS)... the multi-agent system (MAS)" - the focus being on MAS.
+The authors are very fond of TLA's (three-letter acronyms) and this paper includes eleven of them:
+<ul><li>AGV (automated guided vehicle)</li>
+    <li>AMS (agile manufacturing system)</li>
+    <li>CPS (cyber-physical system)</li>
+    <li>ERP (enterprise resource planning)</li>
+    <li>FMS (flexible manufacturing system)</li>
+    <li>IDE (integrated development environment)</li>
+    <li>IOT (internet of things)</li>
+    <li>MAS (multi-agent system)</li>
+    <li>MES (manufacturing execution system)</li>
+    <li>UMI (unmarked index, defined as "the number of allowed sub functions")</li>
+    <li>WSN (wireless sensor network)</li>
+</ul>
+The authors propose dividing up the functions of the smart factory into: 
+"physical resource layer, industrial network layer, cloud layer, and supervisory control terminal layer"
+and there is a diagram o this and one of the "negotiation process" between the agents in these layers.
+There is a discussion of the problem of deadlocks and their solution, which they call "congestion control."
+The paper concludes with a promise to build a prototype smart factory using this layout.
+</p>
+<p>The Bank of England's article about economic modelling (<a href="References.html#turrell">Turrel, 2016</a>) begins by explaining how the behaviour of 
+large-scale systems is determined by the individual contributions of many components, each of which can be simulated by an agent.
+This is the idea of the "Digital Twin," developed at the University of Michigan (<a href="References.html#grieves">Grieves, 2015</a>).
+This paper discusses recently developed agent-based models in the fields of "corporate bonds and housing" and describes them as the
+economic equivalent of "bottom-up" Monte Carlo models from the world of science.
+There is a good exposition of the universal applicability of agent-based models:
+"Agents could represent the consumers in an economy, fish within a shoal, particles in a gas, or even galaxies in the Universe."
+Even individuals can be modelled, for example factory workers with different productivities.
+In economics these systems can be used to model 
+"cycles, bubbles, clustered volatility, fire sales of assets, and the onset of 'bear' and 'bull' markets."
+The author credits the physicist Enrico Fermi with using an agent-based approach to simulate the behaviour of individual neutrons
+instead of trying to calculate flux levels using formulas.  
+He also mentions the origin of the phrase "Monte Carlo Method" (<a href="References.html#metropolis">Metropolis &amp; Utram, 1949</a>).
+An important justification for using this approach in economics is 
+"Adam Smith's metaphor of the invisible hand: how the self-interested actions of real agents in the economy combine 
+to produce socially optimal outcomes"
+</p>
+
+<p id="unit12reading"><b>Unit 12 Reading</b></p>
+<p>I was surprised to learn in this week's paper, from Ned University (<a href="References.html#nasim">Nasim et al., 2022</a>),
+that there is an AI Incident Database.
+This is broken down by "Time, Geographic Locations, Application Areas, and Classifications."
+Early in the article a line caught my eye, which I simply do not believe:
+"researchers at the Chicago University, have developed an algorithm that predicts crimes a week prior to their occurrence with 90% accuracy."
+I also note that the author of the paper cited with that quote, H.M. Alzoubi, has authored/co-authored 15 of the 36 papers cited.
+I decided not to read any more of this paper.
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+</html>
