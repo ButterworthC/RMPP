@@ -15,7 +15,7 @@ th {
 }
 td {
     padding: 8px;
-    text-align: center;
+    text-align: left;
 }
 th, td {
     border: 1px solid #ddd; /* Single line border */
@@ -53,19 +53,42 @@ th, td {
 
 <h2>Unit 1: <!-- Introduction to Research Methods. The Scientific Investigation and -->
 Ethics in Computing</h2>
-<p>I found the Association for Computing Machinery's Code of Ethics <a href="#acm2018">ACM, 2018</a>) and its case studies (<a href="#acmnd">ACM, n.d.</a>), 
+<p>I found the Association for Computing Machinery's Code of Ethics (<a href="#acm2018">ACM, 2018</a>) and its case studies (<a href="#acmnd">ACM, n.d.</a>), 
 and the British Computer Society's Code of Conduct (<a href="#bcs">BCS, 2022</a>),
 to be rooted in common sense but, as BCS admits: "It is expected that these rules and professional standards 
 will be higher than those established by the general law 
 and that they will be enforced through disciplinary action which can result in expulsion from membership."
 In other words, these rules are toothless. A statutory framework would have more of a bite and would help close the gap in compliance.</p>
-<p>Those were just two governance frameworks but a recent paper (<a href="#correa">Corr&ecirc;a, 2023</a>) examines 200 such frameworks, in the form of a survey of surveys,
+<h3>Reflective Activity 1: Ethics in Computing in the age of Generative AI [*** words]</h3>
+<p>The above were just two governance frameworks but a recent paper (<a href="#correa">Corr&ecirc;a, 2023</a>) examines 200 such frameworks, in the form of a survey of surveys,
 aiming "to determine whether a consensus exists regarding the normative discourse presented in ethical guidelines surrounding AI development"
 and concluding (like me) that there is a "need for comprehensive and enforceable frameworks to guide ethical AI development and usage."</p>
 
 <h2>Unit 2: Research Questions, the Literature Review and the Research Proposal</h2>
 
 <h2>Unit 3: Methodology and Research Methods</h2>
+<h3>Peer Review Activity</h3>
+<p>
+I selected two papers on image classification:
+
+<table>
+<tr><td></td><th>Image Classification with<br>Classic &amp; Deep Learning Techniques</th><th>A Survey on Semi- Self- and Unsupervised<br>Learning for Image Classification</th></tr>
+<tr><th style="text-align: left;">Source</th><td><a href="#lorente">Lorente et al. (2021)</a></td><td><a href="#schmarje">Schmarje et al. (2021)</a></td></tr>
+<tr><th style="text-align: left;">Type</th><td>Experimental study</td><td>Survey</td></tr>
+<tr><th style="text-align: left;">Purpose</th><td>To compare various kinds of image classifier</td><td>To "compare 34 methods in detail based on their performance"</td></tr>
+<tr><th style="text-align: left;">Problem</th><td>Determining the most effective method under different circumstances</td><td>Scarcity of labeled data in training high-performing classifiers</td></tr>
+<tr><th style="text-align: left;">Objective</th><td>To assess the performance of these techniques "in terms of accuracy and loss"</td><td>To identify trends, categorize existing approaches, and highlight future research directions</td></tr>
+<tr><th style="text-align: left;">Contribution</th><td>Offering insights for researchers and practitioners in choosing suitable classifiers</td><td>Making it easier for new researchers to understand the field's progress and open challenges</td></tr>
+<tr><th style="text-align: left;">Appropriateness<br>of research methodology</th><td>It directly tests different classification techniques on benchmark datasets, enabling objective comparisons</td><td>A survey-based approach is appropriate since the goal is to provide a broad synthesis rather than conduct original experiments</td></tr>
+<tr><th style="text-align: left;">Appropriateness<br>of data collection<br>and analysis</th><td>Uses widely accepted datasets and performance metrics</td><td>Based on reviewing past studies rather than conducting new experiments</td></tr>
+<tr><th style="text-align: left;">Support for claims and conclusions</th><td>Includes "accuracy and loss" comparisons to justify its claims but significance testing could strengthen its conclusions</td><td>Relies on external studies to support its claims</td></tr>
+<tr><th style="text-align: left;">Enhancements</th><td>I would test on more datasets to confirm accuracy, and change some parameters to ensure the model is optimised</td><td>Perhaps include a side-by-side comparison of methodologies, and talk more about potential biases</td></tr>
+
+</table>
+
+</p>
+
+
 
 <h2>Unit 4: Case Studies, Focus Groups and Observations</h2>
 <h3>Unit 4 Seminar: Case Study on Privacy</h3>
@@ -108,7 +131,9 @@ lawfulness, fairness, and transparency principles (<a href="#eu2016">European Un
 <p id="acmnd">ACM. (n.d.) Code of Ethics: Case studies. Available from: <a href="https://www.acm.org/code-of-ethics/case-studies">https://www.acm.org/code-of-ethics/case-studies</a> [Accessed 31 January 2025].</p>
 <p id="bcs">BCS. (2022) BCS, The Chartered Institute for IT. The Code of Conduct. Available from: <a href="https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf">https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf</a> [Accessed 1 February 2025]</p>
 <p id="correa">Corr&ecirc;a, N.K. et al. (2023) Worldwide AI ethics: A review of 200 guidelines and recommendations for AI governance. <i>Patterns</i> 4(10). DOI: <a href="https://doi.org/10.1016/j.patter.2023.100857">https://doi.org/10.1016/j.patter.2023.100857</a></p>
-<p id="eu2016">European Union (2016) Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). Official Journal of the European Union L 119, 4 May, pp. 1–88. Available from: <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a> [Accessed: 19 February 2025].</p>
+<p id="eu2016">European Union (2016) Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). Official Journal of the European Union L 119, 4 May, pp. 1-88. Available from: <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a> [Accessed: 19 February 2025].</p>
+<p id="lorente">Lorente, O., Riera, I. &amp; Rana, A. (2021) Image Classification with Classic and Deep Learning Techniques. <i>arXiv</i>. DOI: <a href="https://doi.org/10.48550/arXiv.2105.04895">doi.org/10.48550/arXiv.2105.04895</a></p>
+<p id="schmarje">Schmarje, L. et al. (2021) A Survey on Semi- Self- and Unsupervised Learning for Image Classification. <i>IEEE Access</i>. DOI: <a href="http://dx.doi.org/10.1109/ACCESS.2021.3084358">dx.doi.org/10.1109/ACCESS.2021.3084358</a></p>
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
